@@ -3,6 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
 import Summary from "../Pages/Summary/Summary";
 import Ticket from "../Pages/Ticket/Ticket";
+import MyTickets from "../Pages/MyTickets/MyTickets";
 
 
 const routes = createBrowserRouter([
@@ -21,6 +22,10 @@ const routes = createBrowserRouter([
             {
                 path:"/ticket",
                 element:<Ticket/>
+            },
+            {
+                path:"/my-tickets",
+                element:<MyTickets/>
             }
 
         ]

@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { setLocalstorageData } from "../../localstorage/localstorage";
 
 
 const Ticket = () => {
@@ -9,8 +10,10 @@ const Ticket = () => {
         formState: { errors },
       } = useForm();
 
+      // const ticket = watch("ticket")
       const onSubmit=(data)=>{
-        console.log(data)
+        const {name, email, time} = data
+        setLocalstorageData(name, email, time)
       }
   return (
 <div className="flex justify-center items-center">
