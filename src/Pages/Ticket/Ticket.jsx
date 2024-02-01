@@ -6,11 +6,9 @@ const Ticket = () => {
     const {
         register,
         handleSubmit, 
-        watch,
         formState: { errors },
       } = useForm();
 
-      // const ticket = watch("ticket")
       const onSubmit=(data)=>{
         const {name, email, time} = data
         setLocalstorageData(name, email, time)
