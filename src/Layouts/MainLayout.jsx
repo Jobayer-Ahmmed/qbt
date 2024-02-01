@@ -1,14 +1,11 @@
 import { Outlet } from "react-router-dom"
-import Navbar from "../Shared/Navbar"
-import Footer from "../Shared/Footer"
+
 
 
 const MainLayout = () => {
   return (
-    <div>
-        <Navbar/>
+    <div className="px:8 md:px-16 lg:px-20 my-myMargin">
         <Outlet/>
-        <Footer/>
     </div>
   )
 }
